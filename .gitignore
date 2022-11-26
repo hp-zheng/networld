@@ -1,7 +1,13 @@
-# Jekyll & Bundle
+# Idea docs
+.idea
+
+# Jekyll
 _site/
 .sass-cache/
+.jekyll-cache/
 .jekyll-metadata
+
+# Bundle
 .bundle/
 vendor/
-**/.DS_Store.idea
+**/.DS_Store
