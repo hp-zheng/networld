@@ -15,10 +15,32 @@
     color: black;
 }
 
+/* 标题字体加大 */
+.header h1 {
+    font-size: 40px;
+}
+
+/* 导航 */
+.navbar {
+    overflow: hidden;
+    background-color: gray;
+}
+
+/* 导航中的链接 */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1%;
+}
+
 .body {
     font-family: Arial, sans-serif;
     margin: 0;
 }
+
+
 
 /*h3 {*/
 /*    color: blue;*/
