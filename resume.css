@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+/*body {*/
+/*    font-family: Arial, sans-serif;*/
+/*    margin: 0;*/
+/*}*/
+
+/* 标题 */
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #1abc9c;
+    color: black;
+}
+
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/*h3 {*/
+/*    color: blue;*/
+/*}*/
+
