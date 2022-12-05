@@ -1,47 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <link rel="stylesheet" href="index.css">
+	<meta charset="UTF-8">
+	<!-- 使网页能够兼容 IE8/9 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 定义网页可视区域 -->
+	<!-- width=device-width: 使网页宽度跟随设备宽度 -->
+	<!-- initial-scale=1.0: 定义网页加载时的初始缩放度 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hao Zheng</title>
+	<!-- 网页标签图标 -->
+	<link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/svg+xml">
+	<!-- 自定义 css 文件链接 -->
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<!-- Google 字体链接 -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?
+		family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap">
 </head>
-<body>
-    <div id="background-wrap">
-        <div class="x1">
-            <div class="cloud"></div>
-        </div>
-        <div class="x2">
-            <div class="cloud"></div>
-        </div>
-        <div class="x3">
-            <div class="cloud"></div>
-        </div>
-        <div class="x4">
-            <div class="cloud"></div>
-        </div>
-        <div class="x5">
-            <div class="cloud"></div>
-        </div>
-    </div>
+
+<body id="top">
+	<!-- HEADER -->
+	<header class="header" data-header>
+		<div class="container">
+			<!-- Header 左上角 logo -->
+			<a href="#">
+				<h1 class="logo">Hao Zheng</h1>
+			</a>
+
+			<!-- 页面横向尺寸缩小时，导航栏右上角按钮图标 -->
+			<button class="nav-toggle-btn" aria-label="Toggle Menu" data-nav-toggle-btn>
+				<ion-icon class="menu-icon" name="menu-outline"></ion-icon>
+				<ion-icon class="close-icon" name="close-outline"></ion-icon>
+			</button>
+
+			<!-- 导航栏右侧按钮，或页面横向尺寸缩小时，导航栏左侧按钮-->
+			<nav class="navbar container">
+				<ul class="navbar-list">
+					<li><a href="#home" class="navbar-link" data-nav-link>Home</a></li>
+					<li><a href="#about" class="navbar-link" data-nav-link>About</a></li>
+					<li><a href="#skills" class="navbar-link" data-nav-link>Skills</a></li>
+					<li><a href="#portfolio" class="navbar-link" data-nav-link>Portfolio</a></li>
+					<li><a href="#contact" class="navbar-link" data-nav-link>Contact</a></li>
+					<li><a href="./assets/docs/resume.pdf" class="btn btn-primary">Download CV</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- UNIQUE CONTENTS -->
+	<main>
+		<!-- main 标签指定文档的主体内容，并且这些内容在文档中是唯一的，不应包含会在文档中重复出现的内容 -->
+		<article>
+			<!-- article 标签定义独立的内容，内容本身必须是有意义的且必须是独立于文档的其余部分 -->
+
+			<!-- Section: Myself -->
+			<section class="myself" id="home">
+				<!-- section 标签定义了文档的某个区域。比如章节、头部、底部或者文档的其他区域 -->
+				<div class="container">
+					<!-- 头像部分 -->
+					<div class="myself-banner">
+						<img src="./assets/images/myself-banner.png" width="2400" height="2400" loading="lazy"
+							alt="Hao's Photo" class="img-cover">
+					</div>
+
+					<!-- 头像配备文字部分 -->
+					<div class="myself-content">
+						<h2 class="myself-title">
+							<span>Hello I'm</span>
+							<strong>Hao Zheng</strong>Programming Developer from British Columbia
+						</h2>
+						<p class="myself-text">
+							Bachelor of Computer Science<br>
+							University of Manitoba
+						</p>
+
+						<!-- 文字下方链接 -->
+						<div class="btn-group">
+							<a href="#contact" class="btn btn-primary blue">Contact Me</a>
+							<a href="#about" class="btn">About Me</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Section: About -->
+			<section class="section about" id="about">
+				<div class="container">
+					<!-- 简介图片部分 -->
+					<figure class="about-banner">
+						<img src="./assets/images/about-banner.jpg" width="3648" height="2736" loading="lazy"
+							alt="Hao's Photo" class="img-cover">
+					</figure>
+
+					<!-- 简介图片配备文字部分 -->
+					<div class="about-content">
+						<p class="section-subtitle">Me as a Developer</p>
+						<h2 class="h2 section-title">A competent Computer Science graduate</h2>
+						<p class="section-text">have solid programming knowledge and proven research
+							experiences in delivering robust and scalable software development.
+						</p>
+						<p class="section-text">
+							Demonstrated an impeccable understanding of the Object-Oriented Programming
+							(OOP), SDLC, and design patterns.
+						</p>
+
+						<!-- 文字下方链接 -->
+						<a href="#portfolio" class="btn btn-primary blue">View Portfolio</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Section: Portfolio -->
+<!--			<section class="section portfolio" id="portfolio">-->
+			<section class="service" aria-labelledby="service-label">
+				<div class="container">
+					<!-- 文字部分 -->
+					<p class="section-subtitle">Portfolio</p>
+					<h2 class="h2 section-title">My Professional Experiences</h2>
+					<p class="section-text">My completed and ongoing works, including projects such as
+						apps, games, and tools, plus my previous publications on IEEE.
+					</p>
 
 
-    <div id="content">
-        <div class="content1">
-            <h1>Welcome to my personal website!</h1>
+					<!-- 每个作品的文字说明和链接 -->
+					<div class="slider" data-slider>
+						<ul class="slider-container service-list" data-slider-container>
+							<!-- 1.Project -->
+							<li class="slider-item" data-slider-item>
+								<div class="service-card">
+									<div class="card-icon">
+										<ion-icon name="wallet-outline"></ion-icon>
+									</div>
+									<h3 class="h3 card-title">Personal Budget Balancing System</h3>
+									<p class="card-text">An Android application that aims to assist in
+										personal financing management.</p>
+									<span class="text-lg card-number">01</span>
+									<a href="https://github.com/zhengyph/Comp3350" class="layer-link"></a>
+								</div>
+							</li>
 
-            <p>ABOUT ME</p>
+							<!-- 2.Games (todo) -->
+							<li class="slider-item" data-slider-item>
+								<!-- changed from "card-content" to "service-card" -->
+								<div class="service-card">
+									<!-- class="card-icon" is NEW -->
+									<div class="card-icon">
+										<ion-icon name="game-controller-outline"></ion-icon>
+										<!-- <ion-icon name="game-controller"></ion-icon> -->
+									</div>
+									<h3 class="h3 card-title">Browser Games</h3>
+									<!-- class="card-text" is NEW -->
+									<p class="card-text">The video games I made for practicing coding skills
+										and fun. This section will be continuously updated.</p>
+									<span class="text-lg card-number">02</span>
+									<!-- changed from "portfolio-card" to "layer-link" -->
+									<a href="./games.html" class="layer-link"></a>
+								</div>
+							</li>
 
-            <a href="https://hp-zheng.github.io/networld/resume.html">Resume</a>
-            <a href="https://hp-zheng.github.io/networld/projects.html">Projects</a>
-            <br>
-            <a href="https://www.google.ca">Google</a>
+							<!-- 3.Publishments -->
+							<li class="slider-item" data-slider-item>
+								<div class="service-card">
+									<div class="card-icon">
+										<ion-icon name="book-outline"></ion-icon>
+									</div>
+									<h3 class="h3 card-title">Research Topics & Publications</h3>
+									<p class="card-text">Co-published 7 research papers to IEEE. Topics involve
+										big data, data analysis and mining</p>
+									<span class="text-lg card-number">03</span>
+									<a href="https://ieeexplore.ieee.org/author/37088804025" class="layer-link"></a>
+								</div>
+							</li>
 
-        </div>
-    </div>
+							<!-- 4.(todo) -->
+							<li class="slider-item" data-slider-item>
+								<div class="service-card">
+									<div class="card-icon">
+										<ion-icon name="alert-circle-outline"></ion-icon>
+									</div>
+									<h3 class="h3 card-title">To Be Continue...</h3>
+									<p class="card-text">Will post more of my works in the future.</p>
+									<span class="text-lg card-number">04</span>
+									<a href="#" class="layer-link"></a>
+								</div>
+							</li>
+						</ul>
+
+						<!-- 箭头控制左右移动 -->
+						<div class="slider-controls">
+							<button class="slider-control prev" data-slider-prev aria-label="Slide to previous item">
+								<div class="line"></div>
+								<div class="arrow"></div>
+							</button>
+							<button class="slider-control next" data-slider-next aria-label="Slide to next item">
+								<div class="line"></div>
+								<div class="arrow"></div>
+							</button>
+						</div>
+					</div>
 
 
-<!-- hp-zheng.github.io -->
 
-    <!--todo: set Chinese and English versions-->
+					<!-- 每个作品的文字说明和链接 -->
+					<ul class="portfolio-list">
+						<!-- 2.Project -->
+						<!-- <li>
+							<a href="https://github.com/zhengyph/Comp3350" class="portfolio-card"
+								style="background-image: url('./assets/images/portfolio-3.jpg')">
+								<div class="card-content">
+									<p class="card-subtitle">Github</p>
+									<h3 class="h3 card-title">Personal Budget-Balancing System</h3>
+									<span class="btn-link">
+										<span>View Project</span>
+										<ion-icon name="arrow-forward"></ion-icon>
+									</span>
+								</div>
+							</a>
+						</li> -->
+
+						<!-- 3.Publications -->
+						<!-- <li>
+							<a href="https://ieeexplore.ieee.org/author/37088804025" class="portfolio-card"
+								style="background-image: url('./assets/images/portfolio-2.jpg')">
+								<div class="card-content">
+									<p class="card-subtitle">IEEE</p>
+									<h3 class="h3 card-title">Research Topics & Publications</h3>
+									<span class="btn-link">
+										<span>View Publications</span>
+										<ion-icon name="arrow-forward"></ion-icon>
+									</span>
+								</div>
+							</a>
+						</li> -->
+
+						<!-- 4.(todo) -->
+					</ul>
+				</div>
+			</section>
+
+
+
+			<!-- Section: Skills -->
+			<section class="section skills" id="skills">
+				<div class="container">
+					<!-- 文字部分 -->
+					<p class="section-subtitle">My Skills</p>
+					<h2 class="h2 section-title">I keep sharpening my skills and like learning</h2>
+					<p class="section-text">
+						I have exceptional time management skills with a willingness to
+						resolve urgent application issues outside of business hours.
+					</p>
+
+					<!-- 每个技能的图标和说明 -->
+					<ul class="skills-list">
+
+						<li class="skills-item">
+							<div class="wrapper" style="width: 95%">
+								<h3 class=" skills-title">Java</h3>
+
+								<data class="skills-data" value="95">95%</data>
+							</div>
+
+							<div class="skills-progress-box">
+								<div class="skills-progress" style="width: 95%"></div>
+							</div>
+						</li>
+
+						<li class="skills-item">
+							<div class="wrapper" style="width: 75%">
+								<h3 class="skills-title">Python</h3>
+
+								<data class="skills-data" value="75">75%</data>
+							</div>
+
+							<div class="skills-progress-box">
+								<div class="skills-progress" style="width: 75%"></div>
+							</div>
+						</li>
+
+						<li class="skills-item">
+							<div class="wrapper" style="width: 90%">
+								<h3 class="skills-title">SQL & Databases</h3>
+
+								<data class="skills-data" value="90">90%</data>
+							</div>
+
+							<div class="skills-progress-box">
+								<div class="skills-progress" style="width: 90%"></div>
+							</div>
+						</li>
+
+						<li class="skills-item">
+							<div class="wrapper" style="width: 70%">
+								<h3 class="skills-title">JDBC, JPA</h3>
+
+								<data class="skills-data" value="70">70%</data>
+							</div>
+
+							<div class="skills-progress-box">
+								<div class="skills-progress" style="width: 70%"></div>
+							</div>
+						</li>
+
+						<li class="skills-item">
+							<div class="wrapper" style="width: 80%">
+								<h3 class="skills-title">HTML/CSS/JavaScript</h3>
+
+								<data class="skills-data" value="80">80%</data>
+							</div>
+
+							<div class="skills-progress-box">
+								<div class="skills-progress" style="width: 80%"></div>
+							</div>
+						</li>
+
+						<li class="skills-item">
+							<div class="wrapper" style="width: 75%">
+								<h3 class="skills-title">Junit, Mockito</h3>
+
+								<data class="skills-data" value="75">75%</data>
+							</div>
+
+							<div class="skills-progress-box">
+								<div class="skills-progress" style="width: 75%"></div>
+							</div>
+						</li>
+
+					</ul>
+
+				</div>
+			</section>
+
+
+
+
+
+			<!-- Section: Contact -->
+			<section class="section contact" id="contact">
+				<div class="container">
+					<div class="contact-card">
+						<p class="card-subtitle">Contact me</p>
+						<h2 class="h2 section-title">Leave a message</h2>
+						<div class="wrapper">
+							<!-- 邮件部分 -->
+							<form class="contact-form" method="post" action="./assets/php/send_email.php">
+								<input type="text" name="name" placeholder="Your Name" required class="contact-input">
+								<input type="email" name="email" placeholder="Your Email" required
+									class="contact-input">
+								<textarea name="message" placeholder="Message" required
+									class="contact-input"></textarea>
+								<button type="submit" class="btn-submit">Submit Message</button>
+							</form>
+
+							<!-- 个人信息 -->
+							<ul class="contact-list">
+								<!-- 地址图标和内容 -->
+								<li class="contact-item">
+									<div class="contact-icon">
+										<ion-icon name="location"></ion-icon>
+									</div>
+									<div>
+										<h3 class="contact-item-title">Address</h3>
+										<address class="contact-item-link">Coquitlam, BC, Canada</address>
+									</div>
+								</li>
+
+								<!-- 邮件图标和内容 -->
+								<li class="contact-item">
+									<div class="contact-icon">
+										<ion-icon name="mail"></ion-icon>
+									</div>
+									<div>
+										<h3 class="contact-item-title">Email</h3>
+										<a href="mailto:hao.zheng89@outlook.com" class="contact-item-link">
+											hao.zheng89@outlook.com
+										</a>
+									</div>
+								</li>
+
+								<!-- 电话图标和内容 -->
+								<li class="contact-item">
+									<div class="contact-icon">
+										<ion-icon name="call"></ion-icon>
+									</div>
+									<div>
+										<h3 class="contact-item-title">Phone</h3>
+										<a href="tel:+18258580168" class="contact-item-link">+1 (825) 858 0168</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+		</article>
+	</main>
+
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div class="container">
+			<!-- 版权及 GitHub 链接 -->
+			<p class="copyright">
+				&copy; 2022 <a href="https://github.com/zhengyph" class="copyright-link">zhengyph</a>. All Rights
+				Reseverd
+			</p>
+
+			<!-- 其它链接 (todo) -->
+			<ul class="footer-list">
+				<li>
+					<!-- <a href="#" class="footer-link">Terms & Condition</a> -->
+				</li>
+				<li>
+					<!-- <a href="#" class="footer-link">Privacy Policy</a> -->
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- BACK TO TOP -->
+	<a href="#top" class="back-to-top" data-back-to-top>BACK TO TOP</a>
+
+	<!-- ** 这部分必须放在最后 ** -->
+	<!-- 自定义 js, ionicons 链接 -->
+	<script src="./assets/js/script.js"></script>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
